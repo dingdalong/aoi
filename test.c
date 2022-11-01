@@ -99,7 +99,7 @@ test(struct aoi_space * space) {
 int
 main() {
 	struct alloc_cookie cookie = { 0,0,0 };
-	struct aoi_space * space = aoi_create(my_alloc , &cookie);
+	struct aoi_space * space = aoi_create(my_alloc , &cookie, 10.0f);
 
 	test(space);
 

@@ -20,7 +20,7 @@ void aoi_message(struct aoi_space *space, aoi_Callback cb, void *ud);
  * You can define your own allocator for each independent space.
  * typedef void * (*aoi_Alloc)(void *ud, void * ptr, size_t sz);
  */
-struct aoi_space * aoi_create(aoi_Alloc alloc, void *ud);
+struct aoi_space * aoi_create(aoi_Alloc alloc, void *ud,  float radis2);
 void aoi_release(struct aoi_space *);
 
 /*

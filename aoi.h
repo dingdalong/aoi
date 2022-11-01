@@ -9,7 +9,7 @@ typedef void (aoi_Callback)(void *ud, uint32_t watcher, uint32_t marker);
 
 struct aoi_space;
 
-struct aoi_space * aoi_create(aoi_Alloc alloc, void *ud);
+struct aoi_space * aoi_create(aoi_Alloc alloc, void *ud, float radis2);
 struct aoi_space * aoi_new();
 void aoi_release(struct aoi_space *);
 
